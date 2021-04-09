@@ -113,7 +113,7 @@ export default {
       // };
       ctx.drawImage(bg, 0, 0);
       ctx.drawImage(frame, 0, 0);
-      ctx.drawImage(item, 0, 0);
+      ctx.drawImage(item, 0, 0,canvas.width,canvas.height);
       // 19x19
       // console.log(this.star_num);
       this.star_num = this.star_num ?? 0;
