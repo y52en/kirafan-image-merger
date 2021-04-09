@@ -1,19 +1,19 @@
 <template lang="pug">
   v-app
     v-main
-      HelloWorld.mx-2
+      router-view.mx-2
     
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+// import HelloWorld from './components/HelloWorld';
 
 export default {
   name: 'App',
 
-  components: {
-    HelloWorld,
-  },
+  // components: {
+  //   HelloWorld,
+  // },
 
   data: () => ({
     //
