@@ -65,7 +65,7 @@ export default {
   },
   methods: {
     ImgOnload(img_elm, url) {
-      const CORS = true;
+      const CORS = false;
       return new Promise((resolve, reject) => {
         const img = img_elm;
         img.onload = () => resolve();
