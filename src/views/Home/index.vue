@@ -65,7 +65,7 @@ export default {
   },
   methods: {
     ImgOnload(img_elm, url) {
-      const CORS = false;
+      const CORS = true;
       return new Promise((resolve, reject) => {
         const img = img_elm;
         img.onload = () => resolve();
@@ -112,8 +112,9 @@ export default {
 
       // };
       ctx.drawImage(bg, 0, 0);
-      ctx.drawImage(frame, 0, 0);
       ctx.drawImage(item, 0, 0,canvas.width,canvas.height);
+      ctx.drawImage(frame, 0, 0);
+
       // 19x19
       // console.log(this.star_num);
       this.star_num = this.star_num ?? 0;
